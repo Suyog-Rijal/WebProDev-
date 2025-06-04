@@ -1,0 +1,18 @@
+import {Hero} from "@/app/(home)/_components/Hero";
+import {Trust} from "@/app/(home)/_components/Trust";
+import {WhatWeDo} from "@/app/(home)/_components/WhatWeDo";
+import {LeadingLaravel} from "@/app/(home)/_components/LeadingLaravel";
+import {FAQ} from "@/app/(home)/_components/Faq";
+
+export default function Home() {
+    return (
+        <div className={''}>
+
+            <Hero />
+            <Trust />
+            <WhatWeDo />
+            <LeadingLaravel />
+            <FAQ />
+        </div>
+    );
+}
