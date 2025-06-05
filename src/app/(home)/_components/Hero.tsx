@@ -106,8 +106,7 @@ export const Hero = () => {
 
                             <motion.p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-lg"
                                       variants={itemVariants}>
-                                Transform your web initiatives with elite, security-cleared engineers delivering bullet-proof code, transparent reporting, and measurable ROI.
-                            </motion.p>
+                                Transform your web initiatives with elite, security-cleared engineers delivering bulletproof, scalable, and high-performance PHP solutions tailored to your business needs.                            </motion.p>
                         </div>
 
                         {/* CTA Buttons */}
@@ -128,8 +127,7 @@ export const Hero = () => {
                             </Button>
                         </motion.div>
 
-                        {/* Google Rating */}
-                        <motion.div className="flex items-center gap-4 pt-4" variants={itemVariants}>
+                        <motion.div className="flex flex-col flex-s justify-center gap-4 pt-4" variants={itemVariants}>
                             <div className="flex items-center gap-2">
                                 <Image src={"/google-icon.svg"} alt={"Google"} width={34} height={34}/>
                                 <span className="text-lg font-semibold text-gray-900">4.8</span>
@@ -138,9 +136,31 @@ export const Hero = () => {
                                         <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400"/>
                                     ))}
                                 </div>
+                                <div className="h-4 w-px bg-gray-300"/>
+                                <p className="text-gray-600 font-medium">500+ Google Reviews</p>
                             </div>
-                            <div className="h-4 w-px bg-gray-300"/>
-                            <p className="text-gray-600 font-medium">500+ Google Reviews</p>
+
+                            {/*<div className={'flex gap-4 items-center'}>*/}
+                            {/*    <div className="h-8 w-fit relative p-2 rounded-md border-2 border-gray-200">*/}
+                            {/*        <Image*/}
+                            {/*            src="/clutch-icon.svg"*/}
+                            {/*            alt="clutch"*/}
+                            {/*            height={40}*/}
+                            {/*            width={0}*/}
+                            {/*            style={{ height: '100%', width: 'auto' }}*/}
+                            {/*        />*/}
+                            {/*    </div>*/}
+                            {/*    <div className="h-8 w-fit relative rounded-md">*/}
+                            {/*        <Image*/}
+                            {/*            src="/google-partner.png"*/}
+                            {/*            alt="clutch"*/}
+                            {/*            height={40}*/}
+                            {/*            width={40}*/}
+                            {/*            style={{ height: '100%', width: 'auto' }}*/}
+                            {/*        />*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+
                         </motion.div>
                     </motion.div>
 

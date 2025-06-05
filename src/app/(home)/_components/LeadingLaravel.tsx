@@ -73,7 +73,7 @@ const codeVariants = {
 
 export const LeadingLaravel = () => {
     return (
-        <section className="py-8 bg-white">
+        <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 xl:px-0">
                 <motion.div
                     className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"

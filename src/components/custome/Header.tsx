@@ -18,12 +18,12 @@ const navigations = [
         href: "/about",
     },
     {
-        name: "Contact",
-        href: "/contact",
-    },
-    {
         name: "Blog",
         href: "/blog",
+    },
+    {
+        name: "Contact",
+        href: "/contact",
     },
 ]
 
