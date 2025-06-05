@@ -234,7 +234,7 @@ export const HiringProcess = () => {
                 >
                     <div className="inline-flex items-center gap-2 p-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 text-xs font-medium text-blue-700">
                         <Rocket className="h-4 w-4" />
-                        <span>Ready to start your Laravel project? Let's begin with step one.</span>
+                        <span>Ready to start your Laravel project? Let&#39;s begin with step one.</span>
                     </div>
                 </motion.div>
             </div>
