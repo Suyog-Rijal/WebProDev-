@@ -1,14 +1,11 @@
-"use client"
+"use client";
 
 import type React from "react"
-import { useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowRight, Phone, Mail, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
+import { Phone, Mail, MapPin } from "lucide-react"
 import Image from "next/image"
+import {CIForm} from "@/components/custome/CIForm";
+import {TQuoteFormSchema} from "@/types/quote";
 
 const contactInfo = [
     {
@@ -76,21 +73,8 @@ const formVariants = {
 }
 
 export default function ContactPage() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-    })
-
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target
-        setFormData((prev) => ({ ...prev, [name]: value }))
-    }
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        console.log("Form submitted:", formData)
+    const onSubmit = (data: TQuoteFormSchema) => {
+        console.log("Form submitted with data:", data);
     }
 
     return (
@@ -160,80 +144,7 @@ export default function ContactPage() {
                                 <p className="text-gray-600">Fill in the form and send your questions or feedback immediately.</p>
                             </div>
 
-                            <form onSubmit={handleSubmit} className="space-y-4">
-                                <div className="space-y-2">
-                                    <Label htmlFor="name" className="text-sm font-medium text-gray-700">
-                                        Name <span className="text-red-500">*</span>
-                                    </Label>
-                                    <Input
-                                        id="name"
-                                        name="name"
-                                        type="text"
-                                        required
-                                        value={formData.name}
-                                        onChange={handleInputChange}
-                                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-200 transition-all duration-200"
-                                        placeholder="Enter your full name"
-                                    />
-                                </div>
-
-                                <div className="space-y-2">
-                                    <Label htmlFor="email" className="text-sm font-medium text-gray-700">
-                                        Email <span className="text-red-500">*</span>
-                                    </Label>
-                                    <Input
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        required
-                                        value={formData.email}
-                                        onChange={handleInputChange}
-                                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-200 transition-all duration-200"
-                                        placeholder="Enter your email address"
-                                    />
-                                </div>
-
-                                <div className="space-y-2">
-                                    <Label htmlFor="phone" className="text-sm font-medium text-gray-700">
-                                        Phone Number <span className="text-red-500">*</span>
-                                    </Label>
-                                    <Input
-                                        id="phone"
-                                        name="phone"
-                                        type="tel"
-                                        required
-                                        value={formData.phone}
-                                        onChange={handleInputChange}
-                                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-200 transition-all duration-200"
-                                        placeholder="Enter your phone number"
-                                    />
-                                </div>
-
-                                <div className="space-y-2">
-                                    <Label htmlFor="message" className="text-sm font-medium text-gray-700">
-                                        Message <span className="text-red-500">*</span>
-                                    </Label>
-                                    <Textarea
-                                        id="message"
-                                        name="message"
-                                        required
-                                        value={formData.message}
-                                        onChange={handleInputChange}
-                                        rows={3}
-                                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-200 transition-all duration-200 resize-none"
-                                        placeholder="Tell us about your project requirements..."
-                                    />
-                                </div>
-
-                                <Button
-                                    type="submit"
-                                    className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
-                                    size="lg"
-                                >
-                                    Submit Request
-                                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                                </Button>
-                            </form>
+                            <CIForm onSubmit={onSubmit}></CIForm>
                         </div>
                     </motion.div>
                 </motion.div>

@@ -55,50 +55,50 @@ export const Header = () => {
         >
             <div className="max-w-7xl mx-auto px-4 xl:px-0">
                 <div className="flex justify-between items-center h-16 md:h-20">
-                    <motion.div
-                        className="flex items-center gap-3"
-                        initial={{ opacity: 0, x: -30 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{
-                            duration: 0.7,
-                            delay: 0.3,
-                            ease: [0.25, 0.46, 0.45, 0.94],
-                        }}
-                    >
-                        <Link href={"/"} className="relative overflow-hidden rounded-lg">
-                            <motion.div
-                                whileHover={{
-                                    transition: { type: "spring", stiffness: 300, damping: 10 },
-                                }}
-                            >
-                                <Image
-                                    src="/laravel-icon.svg?height=48&width=48"
-                                    alt="Laravel Icon"
-                                    width={48}
-                                    height={48}
-                                    className="rounded-lg"
-                                />
-                            </motion.div>
-                        </Link>
-                        <div>
-                            <motion.p
-                                className="text-xl font-bold leading-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.5, duration: 0.5 }}
-                            >
-                                WebProDev
-                            </motion.p>
-                            <motion.span
-                                className="text-base font-medium text-gray-600 "
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.6, duration: 0.5 }}
-                            >
-                                Hire Developer
-                            </motion.span>
-                        </div>
-                    </motion.div>
+                    <Link href={"/"}>
+                        <motion.div
+                            className="flex items-center gap-3"
+                            initial={{ opacity: 0, x: -30 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{
+                                duration: 0.7,
+                                delay: 0.3,
+                                ease: [0.25, 0.46, 0.45, 0.94],
+                            }}
+                        >
+                                <motion.div
+                                    whileHover={{
+                                        transition: { type: "spring", stiffness: 300, damping: 10 },
+                                    }}
+                                >
+                                    <Image
+                                        src="/logo.png?height=60&width=60"
+                                        alt="Logo"
+                                        width={60}
+                                        height={60}
+                                        className="rounded-lg"
+                                    />
+                                </motion.div>
+                            <div>
+                                <motion.p
+                                    className="text-xl font-bold leading-tight bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.5, duration: 0.5 }}
+                                >
+                                    WebProDev
+                                </motion.p>
+                                <motion.span
+                                    className="text-base font-medium text-gray-600 "
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.6, duration: 0.5 }}
+                                >
+                                    Hire Developer
+                                </motion.span>
+                            </div>
+                        </motion.div>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:block">

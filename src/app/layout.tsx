@@ -3,6 +3,9 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import {Header} from "@/components/custome/Header";
 import {Footer} from "@/components/custome/Footer";
+import { Toaster } from "@/components/ui/sonner"
+import {ReactNode} from "react";
+
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/laravel-icon.svg",
+                url: "/logo.png",
                 width: 1200,
                 height: 630,
                 alt: "WebProDev Laravel Development",
@@ -69,17 +72,20 @@ export const metadata: Metadata = {
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
-    children: React.ReactNode;
+    children: ReactNode;
 }>) {
     return (
         <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header/>
-        <div className={'mt-20'}>
-            {children}
-        </div>
-        <Footer/>
-        </body>
+            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
+                <Header/>
+                <div className={'mt-20'}>
+                    {children}
+                </div>
+                <Footer/>
+                <Toaster />
+
+            </body>
         </html>
     );
 }

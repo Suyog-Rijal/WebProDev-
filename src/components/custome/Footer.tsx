@@ -114,10 +114,10 @@ export const Footer = () => {
                                     }}
                                 >
                                     <Image
-                                        src="/laravel-icon.svg?height=40&width=40"
-                                        alt="Laravel Icon"
-                                        width={40}
-                                        height={40}
+                                        src="/logo.png?height=60&width=60"
+                                        alt="Logo"
+                                        width={60}
+                                        height={60}
                                         className="rounded-lg"
                                     />
                                 </motion.div>
