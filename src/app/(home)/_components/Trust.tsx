@@ -2,10 +2,12 @@
 
 import { motion } from "framer-motion"
 import { TrendingUp, DollarSign, Clock, CheckCircle } from "lucide-react"
+import CountUp from "react-countup";
 
 const trustStats = [
     {
-        value: "300%",
+        value: 300,
+        suffix: "%",
         title: "Average Performance Boost",
         description: "Clients see dramatic improvements",
         icon: TrendingUp,
@@ -13,7 +15,8 @@ const trustStats = [
         bg: "bg-green-100 group-hover:bg-green-200",
     },
     {
-        value: "60%",
+        value: 60,
+        suffix: "%",
         title: "Unmatched Cost Efficiency",
         description: "Significant cost savings guaranteed",
         icon: DollarSign,
@@ -21,7 +24,8 @@ const trustStats = [
         bg: "bg-amber-100 group-hover:bg-amber-200",
     },
     {
-        value: "7 Days",
+        value: 7,
+        suffix: " Days",
         title: "Rapid Onboarding",
         description: "From interview to coding",
         icon: Clock,
@@ -29,7 +33,8 @@ const trustStats = [
         bg: "bg-indigo-100 group-hover:bg-indigo-200",
     },
     {
-        value: "98%",
+        value: 98,
+        suffix: "%",
         title: "On-Time Delivery",
         description: "Industry-leading reliability",
         icon: CheckCircle,
@@ -103,14 +108,16 @@ export const Trust = () => {
                                     <div className={`p-3 rounded-full transition-all duration-300 ${stat.bg}`}>
                                         <stat.icon className={`h-5 w-5 ${stat.color}`} />
                                     </div>
-
                                 </div>
 
                                 <div className="text-center space-y-1">
                                     <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                                        {stat.value}
+                                        <CountUp
+                                            end={stat.value}
+                                            duration={5}
+                                            suffix={stat.suffix}
+                                        />
                                     </h3>
-
                                     <h4 className="text-base font-semibold text-gray-900">{stat.title}</h4>
                                     <p className="text-sm text-gray-600">{stat.description}</p>
                                 </div>

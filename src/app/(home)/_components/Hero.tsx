@@ -9,6 +9,7 @@ import {Button} from "@/components/ui/button"
 import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea"
 import {Label} from "@/components/ui/label"
+import Image from "next/image"
 
 const containerVariants = {
     hidden: {opacity: 0},
@@ -89,20 +90,23 @@ export const Hero = () => {
                         <div className="space-y-4">
                             <motion.h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
                                        variants={itemVariants}>
-                <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 bg-clip-text text-transparent">
-                  Hire Laravel Developers
-                </span>
+                                <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 bg-clip-text text-transparent">
+                                  Hire Dedicated
+                                </span>
                                 <span
                                     className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">{" "}
-                                    Dedicated Team
-                </span>
+                                    Laravel Developers
+                                </span>
+                                <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 bg-clip-text text-transparent">{" "}
+                                   Through <br/> WPD
+                                </span>
+                                <br/>
+
                             </motion.h1>
 
                             <motion.p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-lg"
                                       variants={itemVariants}>
-                                Transform your web initiatives with security-cleared engineers. Save up to 60% while
-                                getting
-                                enterprise-grade quality.
+                                Transform your web initiatives with elite, security-cleared engineers delivering bullet-proof code, transparent reporting, and measurable ROI.
                             </motion.p>
                         </div>
 
@@ -127,12 +131,13 @@ export const Hero = () => {
                         {/* Google Rating */}
                         <motion.div className="flex items-center gap-4 pt-4" variants={itemVariants}>
                             <div className="flex items-center gap-2">
+                                <Image src={"/google-icon.svg"} alt={"Google"} width={34} height={34}/>
+                                <span className="text-lg font-semibold text-gray-900">4.8</span>
                                 <div className="flex">
                                     {[...Array(5)].map((_, i) => (
                                         <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400"/>
                                     ))}
                                 </div>
-                                <span className="text-lg font-semibold text-gray-900">4.8</span>
                             </div>
                             <div className="h-4 w-px bg-gray-300"/>
                             <p className="text-gray-600 font-medium">500+ Google Reviews</p>
