@@ -121,6 +121,7 @@ exports.Prisma.InquiryScalarFieldEnum = {
   id: 'id',
   name: 'name',
   email: 'email',
+  company: 'company',
   phone: 'phone',
   message: 'message',
   createdAt: 'createdAt'
@@ -129,6 +130,11 @@ exports.Prisma.InquiryScalarFieldEnum = {
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
+};
+
+exports.Prisma.NullsOrder = {
+  first: 'first',
+  last: 'last'
 };
 
 

@@ -43,7 +43,7 @@ export const Header = () => {
     return (
         <motion.header
             className={cn(
-                "w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-gray-200",
+                "w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b backdrop-blur-sm border-gray-200",
                 scrolled ? "bg-white/90" : "bg-white/50",
             )}
             initial={{ opacity: 0, scale: 0.95 }}
@@ -72,10 +72,10 @@ export const Header = () => {
                                     }}
                                 >
                                     <Image
-                                        src="/logo.png?height=60&width=60"
+                                        src="/logo.svg?height=35&width=35"
                                         alt="Logo"
-                                        width={60}
-                                        height={60}
+                                        width={35}
+                                        height={35}
                                         className="rounded-lg"
                                     />
                                 </motion.div>
@@ -170,7 +170,7 @@ export const Header = () => {
                                 whileTap={{ scale: 0.97 }}
                             >
                                 <Button className="ml-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-none shadow-md hover:shadow-lg transition-all duration-300">
-                                    START 7-DAYS TRIAL
+                                    <Link href={'/lets-talk'}>START 7-DAYS TRIAL</Link>
                                 </Button>
                             </motion.div>
                         </ul>

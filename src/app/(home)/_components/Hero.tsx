@@ -5,6 +5,7 @@ import { Sparkles, Star, ArrowRight, PhoneCall } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import {CIForm} from "@/components/custome/CIForm";
+import Link from "next/link";
 
 
 const containerVariants = {
@@ -91,9 +92,8 @@ export const Hero = () => {
                         <motion.div className="flex flex-col sm:flex-row gap-4" variants={itemVariants}>
                             <Button
                                 size="lg"
-                                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
-                            >
-                                START 7-DAYS TRIAL
+                                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
+                                <Link href={'/lets-talk'}>START 7-DAYS TRIAL</Link>
                                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                             </Button>
                             <Button
@@ -119,6 +119,15 @@ export const Hero = () => {
                                 </div>
                                 <div className="h-4 w-px bg-gray-300" />
                                 <p className="text-gray-600 font-medium">500+ Google Reviews</p>
+                            </div>
+
+                            <div className="flex items-end gap-2">
+                                <div> </div>
+                                <Image src={"/google-partner.png"} alt={"Clutch"} width={58} height={58} />
+                                <div>|</div>
+                                <Image src={"/trust-pilot.svg"} alt={"Google"} width={100} height={100} />
+                                <div>|</div>
+                                <Image src={"/Clutch-icon.svg"} alt={"Clutch"} width={50} height={50} />
                             </div>
                         </motion.div>
                     </motion.div>

@@ -20,6 +20,7 @@ export async function POST(request: NextRequest) {
                 email: validatedData.data.email,
                 phone: validatedData.data.phone,
                 message: validatedData.data.message,
+                company: validatedData.data.company || null,
             }
         })
 

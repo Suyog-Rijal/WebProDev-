@@ -114,10 +114,10 @@ export const Footer = () => {
                                     }}
                                 >
                                     <Image
-                                        src="/logo.png?height=60&width=60"
+                                        src="/logo.svg?height=35&width=35"
                                         alt="Logo"
-                                        width={60}
-                                        height={60}
+                                        width={35}
+                                        height={35}
                                         className="rounded-lg"
                                     />
                                 </motion.div>

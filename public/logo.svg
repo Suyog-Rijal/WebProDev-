@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218 268">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient);}
+            .cls-2,.cls-3,.cls-4,.cls-5,.cls-6{isolation:isolate;}
+            .cls-3,.cls-4,.cls-5{font-size:122px;fill:#fcfcfc;}
+            .cls-3,.cls-4,.cls-5,.cls-6{font-family:ArialMT, Arial;}
+            .cls-4{letter-spacing:-0.01em;}
+            .cls-5{letter-spacing:-0.02em;}
+            .cls-6{font-size:105px;fill:#fff;}
+            .cls-7{letter-spacing:-0.02em;}
+        </style>
+        <linearGradient id="linear-gradient" x1="40.42" y1="100.69" x2="258.35" y2="100.69"
+                        gradientTransform="matrix(1, 0, 0, -1, -40.42, 234.54)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#669aff" />
+            <stop offset="1" stop-color="#6fcff0" />
+        </linearGradient>
+    </defs>
+    <title>Asset 1</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="cls-1" d="M128.32,141.51V36H108.17V161.13l89.08,1.06v50.9l-125.67-.53v20.15l90.66.53.54,17-105.64-.88V53.82h16.3V195H180.81V175.51l-87.88-.4L94.12,34.47h-.27V0H0V230.12l36.06-1.35V267.7H181.87v-35h36.06V141.5ZM21.21,208.36,20.15,19.62h50.9l.6,14.68-35.59-.25V208.36Z" />
+            <g class="cls-2" />
+        </g>
+    </g>
+</svg>

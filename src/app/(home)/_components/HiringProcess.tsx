@@ -126,7 +126,7 @@ export const HiringProcess = () => {
     }
 
     return (
-        <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
+        <section className="py-16 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 xl:px-0">
                 <motion.div
                     className="text-center space-y-3 mb-12"

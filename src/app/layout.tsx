@@ -31,6 +31,7 @@ export const metadata: Metadata = {
         telephone: false,
     },
     metadataBase: new URL("https://web-pro-dev.vercel.app"),
+    // metadataBase: new URL("http://localhost:3000"),
     alternates: {
         canonical: "/",
     },
@@ -38,12 +39,13 @@ export const metadata: Metadata = {
         title: "WebProDev - Hire Laravel Developers | Dedicated Team",
         description: "Transform your web initiatives with our top 3% vetted Laravel experts. Save up to 60% while getting enterprise-grade quality.",
         url: "https://web-pro-dev.vercel.app",
+        // url: "http://localhost:3000",
         siteName: "WebProDev",
         locale: "en_US",
         type: "website",
         images: [
             {
-                url: "/logo.png",
+                url: "/logo.svg",
                 width: 1200,
                 height: 630,
                 alt: "WebProDev Laravel Development",

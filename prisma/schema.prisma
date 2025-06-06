@@ -18,6 +18,7 @@ model Inquiry {
     id String @id @default(cuid())
     name String
     email String
+    company String?
     phone String
     message String
 
